@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List Project</title>
+    <link rel="stylesheet" href="/src/input.css" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="text-white h-[100vh]">
+    <!-- Header  -->
+    <section class="text-center h-[20%] flex items-center justify-center">
+      <div>
+        <h1 class="text-[50px] font-bold opacity-95">To-do List 🎯</h1>
+      </div>
+    </section>
+    <!-- Main context box -->
+    <main
+      class="bg-white/10 p-10 mx-[10rem] rounded-3xl backdrop-blur-1xl shadow-2xl border border-white/10"
+    >
+      <div>
+        <!-- Input box and button -->
+        <form class="flex justify-between gap-4 mx-auto max-w-full">
+          <input
+            type="text"
+            placeholder="Add a new task"
+            id="todo-input"
+            class="bg-white/15 rounded-2xl h-[20%] w-full p-5 shadow-3xl drop-shadow-3xl border border-white/10"
+          />
+          <button
+            type="submit"
+            id="btn-submit"
+            class="bg-purple-500 w-fit p-2 text-black rounded-2xl font-bold hover:bg-purple-400 transition duration-300 ease-in-out shadow-3xl drop-shadow-3xl border-1 focus:ring-amber-100 focus:ring-1"
+          >
+            Add Task
+          </button>
+        </form>
+
+        <!-- Task list -->
+        <ul id="todo-list" class="my-4 py-1"></ul>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,122 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+
+body {
+  font-family: "Syne", sans-serif;
+
+  background-image: linear-gradient(
+    to left bottom,
+    #1d063d,
+    #130933,
+    #0e0828,
+    #07061b,
+    #02030b
+  );
+}
+
+main {
+  backdrop-filter: blur(10px);
+}
+
+.li-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: color-mix(
+    in oklab,
+    var(--color-white) /* #fff = #ffffff */ 15%,
+    transparent
+  );
+
+  cursor: pointer;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 10px;
+  border: 1px solid white;
+  border-color: color-mix(
+    in oklab,
+    var(--color-white) /* #fff = #ffffff */ 10%,
+    transparent
+  );
+  --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  --tw-drop-shadow-size: drop-shadow(
+    0 25px 25px var(--tw-drop-shadow-color, rgb(0 0 0 / 0.15))
+  );
+  --tw-drop-shadow: drop-shadow(
+    var(--drop-shadow-2xl) /* 0 25px 25px rgb(0 0 0 / 0.15) */
+  );
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+li button {
+  background-color: red;
+  padding: 2px;
+  cursor: pointer;
+  width: 4rem;
+  border-radius: 10px;
+  border: 2px solid white;
+  border-color: color-mix(
+    in oklab,
+    var(--color-white) /* #fff = #ffffff */ 10%,
+    transparent
+  );
+}
+
+li button:hover {
+  background-color: rgb(216, 0, 0);
+  transition: all 0.3s ease-in-out;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  background-color: #3c0a44;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid white;
+  border-color: color-mix(
+    in oklab,
+    var(--color-white) /* #fff = #ffffff */ 10%,
+    transparent
+  );
+  --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  --tw-drop-shadow-size: drop-shadow(
+    0 25px 25px var(--tw-drop-shadow-color, rgb(0 0 0 / 0.15))
+  );
+  --tw-drop-shadow: drop-shadow(
+    var(--drop-shadow-2xl) /* 0 25px 25px rgb(0 0 0 / 0.15) */
+  );
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+#todo-input {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.completed {
+  background-color: color-mix(
+    in oklab,
+    var(--color-white) /* #fff = #ffffff */ 4%,
+    transparent
+  );
+  color: grey;
+  /* text-decoration: line-through; */
+}
+
+.completed span {
+  text-decoration: line-through;
+}
+
+ul i {
+  text-decoration: none;
+}
